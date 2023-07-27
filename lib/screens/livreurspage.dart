@@ -121,7 +121,15 @@ class LivreursPage extends StatelessWidget {
                               child: GestureDetector(
                                 onTap: () => Navigator.of(context)
                                     .push(MaterialPageRoute(builder: (_) {
-                                  return LivreurDetails();
+                                  return LivreurDetails(
+                                    fullName: e.fullName,
+                                    route: e.route,
+                                    maxWeight: e.maxWeight,
+                                    vehicule: e.vehicule,
+                                    time: e.time,
+                                    date: e.date,
+                                    imageUrl: e.imageUrl
+                                  );
                                 })),
                                 child: LivreurCard(
                                     index: 1,

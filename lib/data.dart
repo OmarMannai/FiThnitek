@@ -6,6 +6,7 @@ class Livreur {
   final String time;
   final String date;
   final String imageUrl;
+  final int id;
 
   Livreur(
       {required this.fullName,
@@ -14,11 +15,14 @@ class Livreur {
       required this.vehicule,
       required this.time,
       required this.date,
-      required this.imageUrl});
+      required this.imageUrl,
+      required this.id
+      });
 }
 
 List<Livreur> allLivreur = [
   Livreur(
+      id:1,
       fullName: 'Mannai Omar',
       route: 'Ariana -> Tunis',
       maxWeight: 70,
@@ -28,6 +32,7 @@ List<Livreur> allLivreur = [
       imageUrl:
           'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'),
   Livreur(
+      id: 2,
       fullName: 'Mannai Omar',
       route: 'Ariana -> Tunis',
       maxWeight: 30,
@@ -37,6 +42,7 @@ List<Livreur> allLivreur = [
       imageUrl:
           'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'),
   Livreur(
+      id: 3,
       fullName: 'Mannai Omar',
       route: 'Ariana -> Tunis',
       maxWeight: 30,
@@ -46,6 +52,7 @@ List<Livreur> allLivreur = [
       imageUrl:
           'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'),
   Livreur(
+      id:4,
       fullName: 'Mannai Omar',
       route: 'Ariana -> Tunis',
       maxWeight: 90,
@@ -135,6 +142,7 @@ List<Colis> allColis = [
 
 List <Livreur> notifications =[
   Livreur(
+      id: 1,
       fullName: 'Mannai Omar',
       route: 'Ariana -> Tunis',
       maxWeight: 30,
@@ -144,6 +152,7 @@ List <Livreur> notifications =[
       imageUrl:
           'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'),
   Livreur(
+      id:2,
       fullName: 'Mannai Omar',
       route: 'Ariana -> Tunis',
       maxWeight: 30,
@@ -153,6 +162,7 @@ List <Livreur> notifications =[
       imageUrl:
           'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'),
   Livreur(
+      id : 3,
       fullName: 'Mannai Omar',
       route: 'Ariana -> Tunis',
       maxWeight: 90,

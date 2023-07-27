@@ -172,7 +172,14 @@ class Home extends StatelessWidget {
                                     child: GestureDetector(
                                       onTap: () => Navigator.of(context)
                                           .push(MaterialPageRoute(builder: (_) {
-                                        return LivreurDetails();
+                                        return LivreurDetails(
+                                            fullName: e.fullName,
+                                            route: e.route,
+                                            maxWeight: e.maxWeight,
+                                            vehicule: e.vehicule,
+                                            time: e.time,
+                                            date: e.date,
+                                            imageUrl: e.imageUrl);
                                       })),
                                       child: LivreurCard(
                                           index: 0,
@@ -231,19 +238,18 @@ class Home extends StatelessWidget {
                                     padding: const EdgeInsets.only(right: 20.0),
                                     child: GestureDetector(
                                       onTap: () => Navigator.of(context)
-                                    .push(MaterialPageRoute(builder: (_) {
-                                      return ColisDetails(
-                                        fullName: e.fullName,
-                                        route: e.route,
-                                        aproxWeight: e.aproxWeight,
-                                        type: e.type,
-                                        price: e.price,
-                                        date: e.date,
-                                        imageUrl: e.imageUrl
-                                      );
-                                    })),
+                                          .push(MaterialPageRoute(builder: (_) {
+                                        return ColisDetails(
+                                            fullName: e.fullName,
+                                            route: e.route,
+                                            aproxWeight: e.aproxWeight,
+                                            type: e.type,
+                                            price: e.price,
+                                            date: e.date,
+                                            imageUrl: e.imageUrl);
+                                      })),
                                       child: ColisCard(
-                                        index: 0,
+                                          index: 0,
                                           fullName: e.fullName,
                                           route: e.route,
                                           aproxWeight: e.aproxWeight,
